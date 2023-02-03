@@ -1,10 +1,11 @@
 $(function (){ 
-  const output_div = document.querySelector(".col-8.col-md-10.description");
-  const save_buttons = document.querySelectorAll("#saveButton");
+  const outputDiv = document.querySelector(".col-8.col-md-10.description");
+  const saveButtons = document.querySelectorAll("#saveButton");
   const textareas = document.querySelectorAll("textarea");
   const timeBlocks = document.querySelectorAll(".time-block");
   const rightNow = new Date().getHours();
 
+  // function to color code time blocks
   function setColor() {
     timeBlocks.forEach(timeBlock => {
       if (rightNow > parseInt(timeBlock.id)) {
@@ -17,7 +18,7 @@ $(function (){
     })
   }
   // event listener
-  save_buttons.forEach(btn => {
+  saveButtons.forEach(btn => {
     btn.addEventListener("click", updateOutput);
   })
   //recall local storage 
