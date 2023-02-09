@@ -12,4 +12,4 @@ In this application I was required to make a webpage that had sections for user 
 - JAVASCRIPT
 
 ## **Preview**
-   ![work-day-scheduler](./assets/images/work-day-scheduler-screenshot.png) 
+   ![work-day-scheduler](./Assets/images/work-day-scheduler-screenshot.png) 
